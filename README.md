@@ -1,0 +1,1 @@
+new app idea being built in React Native using EXPO that allows users to find the best restaurants in town using an underdog branding approach.
