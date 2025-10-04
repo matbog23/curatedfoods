@@ -54,6 +54,5 @@ const styles = StyleSheet.create({
   restaurantDetails: {
     color: "#E2E2E2",
     fontSize: 14,
-    opacity: 0.8,
   },
 });
