@@ -25,7 +25,7 @@ export default function TagsSection({ tags, onTagPress }: TagsSectionProps) {
           accessibilityState={{ selected: tag.isActive }}
           accessibilityHint={`Tap to filter restaurants by ${tag.label.toLowerCase()}`}
         >
-          <Text style={styles.tagText}>{tag.label}</Text>
+          <Text style={[styles.tagText, tag.isActive && styles.tagTextActive]}>{tag.label}</Text>
         </TouchableOpacity>
       ))}
     </View>
@@ -53,5 +53,8 @@ const styles = StyleSheet.create({
     color: "#E2E2E2",
     fontSize: 14,
     fontWeight: "500",
+  },
+  tagTextActive: {
+    color: "#1B1B1B",
   },
 });
