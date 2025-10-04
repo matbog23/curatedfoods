@@ -20,6 +20,10 @@ export default function TagsSection({ tags, onTagPress }: TagsSectionProps) {
           key={tag.id}
           style={[styles.tag, tag.isActive && styles.tagActive]}
           onPress={() => onTagPress?.(tag.id)}
+          accessibilityLabel={`Filter by ${tag.label}`}
+          accessibilityRole="button"
+          accessibilityState={{ selected: tag.isActive }}
+          accessibilityHint={`Tap to filter restaurants by ${tag.label.toLowerCase()}`}
         >
           <Text style={styles.tagText}>{tag.label}</Text>
         </TouchableOpacity>

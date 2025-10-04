@@ -10,10 +10,22 @@ interface FloatingActionButtonsProps {
 export default function FloatingActionButtons({ onSearchPress, onAddPress }: FloatingActionButtonsProps) {
   return (
     <View style={styles.container}>
-      <TouchableOpacity style={styles.fab} onPress={onSearchPress}>
+      <TouchableOpacity 
+        style={styles.fab} 
+        onPress={onSearchPress}
+        accessibilityLabel="Search restaurants"
+        accessibilityRole="button"
+        accessibilityHint="Tap to search for restaurants"
+      >
         <Ionicons name="search" size={24} color="#E2E2E2" />
       </TouchableOpacity>
-      <TouchableOpacity style={styles.fab} onPress={onAddPress}>
+      <TouchableOpacity 
+        style={styles.fab} 
+        onPress={onAddPress}
+        accessibilityLabel="Add restaurant"
+        accessibilityRole="button"
+        accessibilityHint="Tap to add a new restaurant"
+      >
         <Ionicons name="add" size={24} color="#E2E2E2" />
       </TouchableOpacity>
     </View>

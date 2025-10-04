@@ -9,7 +9,13 @@ interface RestaurantCardProps {
 
 export default function RestaurantCard({ name, details, onPress }: RestaurantCardProps) {
   return (
-    <TouchableOpacity style={styles.card} onPress={onPress}>
+    <TouchableOpacity 
+      style={styles.card} 
+      onPress={onPress}
+      accessibilityLabel={`${name}, ${details}`}
+      accessibilityRole="button"
+      accessibilityHint="Tap to view restaurant details"
+    >
       <View style={styles.imagePlaceholder} />
       <View style={styles.overlay}>
         <Text style={styles.restaurantName}>{name}</Text>
