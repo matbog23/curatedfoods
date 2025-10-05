@@ -13,6 +13,12 @@ export default function RootLayout() {
           title: "Curated Foods",
         }}
       />
+      <Stack.Screen
+        name="add-review"
+        options={{
+          title: "Add Review",
+        }}
+      />
     </Stack>
   );
 }
