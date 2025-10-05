@@ -92,7 +92,6 @@ export default function AddReviewScreen() {
             placeholder="Enter restaurant name"
             placeholderTextColor="#666666"
             accessibilityLabel="Restaurant name"
-            accessibilityRole="none"
             accessibilityHint="Required field. Enter the name of the restaurant"
           />
         </View>
@@ -191,7 +190,6 @@ export default function AddReviewScreen() {
             numberOfLines={6}
             textAlignVertical="top"
             accessibilityLabel="Review text"
-            accessibilityRole="none"
             accessibilityHint="Required field. Share your dining experience and thoughts about the restaurant"
           />
         </View>
@@ -207,7 +205,6 @@ export default function AddReviewScreen() {
               placeholder="Enter restaurant address"
               placeholderTextColor="#666666"
               accessibilityLabel="Restaurant address"
-              accessibilityRole="none"
               accessibilityHint="Required field. Enter the full address of the restaurant"
             />
             <TouchableOpacity 
@@ -234,7 +231,6 @@ export default function AddReviewScreen() {
               placeholderTextColor="#666666"
               keyboardType="url"
               accessibilityLabel="Website URL"
-              accessibilityRole="none"
               accessibilityHint="Optional. Enter the restaurant's website URL"
             />
           </View>
@@ -246,7 +242,6 @@ export default function AddReviewScreen() {
               placeholder="Instagram handle"
               placeholderTextColor="#666666"
               accessibilityLabel="Instagram handle"
-              accessibilityRole="none"
               accessibilityHint="Optional. Enter the restaurant's Instagram handle"
             />
           </View>
