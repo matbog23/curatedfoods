@@ -1,6 +1,7 @@
 import React from "react";
 import { View, StyleSheet } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
+import { router } from "expo-router";
 import TagsSection from "../components/TagsSection";
 import RestaurantList from "../components/RestaurantList";
 import FloatingActionButtons from "../components/FloatingActionButtons";
@@ -41,7 +42,7 @@ export default function HomeScreen() {
 
   const handleAddPress = () => {
     console.log("Add pressed");
-    // TODO: Navigate to add restaurant screen
+    router.push("/add-review");
   };
 
   return (
